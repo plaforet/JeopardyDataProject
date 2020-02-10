@@ -12,7 +12,10 @@ public class JeopardyRunner {
 		ArrayList<Category> categories = new ArrayList<Category>();
 		for(Category c : tempCategories) {
 			for(Category cat : categories) {
-				if(!cat.newCategory(categories)) {
+				if(cat.newCategory(categories)) {
+					categories.add(cat);
+				}
+				else {
 					
 				}
 			}
