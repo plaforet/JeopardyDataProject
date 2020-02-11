@@ -6,10 +6,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/blafo/Downloads/sinbad.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/plaforet/Google Drive/TEALS/AP CS A 2019-2020/OOP/Data Lab/DataStudentCode/sinbad.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

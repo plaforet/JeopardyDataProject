@@ -5,21 +5,11 @@ import core.data.*;
 public class JeopardyRunner {
 
 	public static void main(String[] args) {
-		DataSource ds = DataSource.connect("C:\\Users\\blafo\\eclipse-workspace\\JeopardyDataProject\\files\\Jeopardy1.csv");
+		DataSource ds = DataSource.connect("D:\\Projects\\Jeopardy\\Jeopardy Questions.csv");
 		ds.setCacheTimeout(15*60);
 		ds.load();
-		ArrayList<Category> tempCategories = ds.fetchList("Category", "categoryTitle", "question", "answer", "round", "value", "dailyDouble");
-		ArrayList<Category> categories = new ArrayList<Category>();
-		for(Category c : tempCategories) {
-			for(Category cat : categories) {
-				if(cat.newCategory(categories)) {
-					categories.add(cat);
-				}
-				else {
-					
-				}
-			}
-		}
+		ds.printUsageString();
+		
 	}
 
 }
